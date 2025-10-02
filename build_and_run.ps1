@@ -19,21 +19,21 @@ Write-Host ""
 
 # Build main example
 Write-Host "[1/2] Building main example (x³ + x + 5 = 35)..." -ForegroundColor Cyan
-g++ -std=c++17 main.cpp -o zksnark.exe 2>&1 | Out-Null
+g++ -std=c++17 examples/main.cpp -o zksnark.exe 2>&1 | Out-Null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "✓ zksnark.exe compiled successfully" -ForegroundColor Green
 } else {
-    Write-Host "❌ Compilation failed for main.cpp" -ForegroundColor Red
+    Write-Host "❌ Compilation failed for examples/main.cpp" -ForegroundColor Red
     exit 1
 }
 
 # Build simple example
 Write-Host "[2/2] Building simple example (x² = 9)..." -ForegroundColor Cyan
-g++ -std=c++17 simple_example.cpp -o simple.exe 2>&1 | Out-Null
+g++ -std=c++17 examples/simple_example.cpp -o simple.exe 2>&1 | Out-Null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "✓ simple.exe compiled successfully" -ForegroundColor Green
 } else {
-    Write-Host "❌ Compilation failed for simple_example.cpp" -ForegroundColor Red
+    Write-Host "❌ Compilation failed for examples/simple_example.cpp" -ForegroundColor Red
     exit 1
 }
 

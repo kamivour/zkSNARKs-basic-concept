@@ -21,6 +21,8 @@ If you're new to zkSNARKs, follow this learning path:
 
 ### 🏗️ Core Implementation (C++ Headers)
 
+Located in `src/` folder:
+
 | File | Purpose | Lines | Complexity |
 |------|---------|-------|-----------|
 | **field.h** | Finite field arithmetic over prime field | ~150 | ⭐⭐ |
@@ -31,35 +33,45 @@ If you're new to zkSNARKs, follow this learning path:
 
 ### 🎮 Example Programs
 
+Located in `examples/` folder:
+
 | File | Description | Output Size |
 |------|-------------|-------------|
-| **simple_example.cpp** | Demo: x² = 9 | ~50 lines |
 | **main.cpp** | Demo: x³ + x + 5 = 35 | ~200 lines |
+| **simple_example.cpp** | Demo: x² = 9 | ~50 lines |
 
 ### 📖 Documentation Files
 
+Located in `docs/` folder:
+
 | File | Purpose | Best For |
 |------|---------|----------|
-| **README.md** | Quick start guide | Getting started |
-| **PROJECT_SUMMARY.md** | Complete overview | Understanding scope |
-| **TECHNICAL_DOCUMENTATION.md** | In-depth theory | Learning concepts |
+| **README.md** | Detailed project documentation | Complete reference |
+| **INDEX.md** | Complete file index (this file) | Navigation |
 | **QUICK_REFERENCE.md** | Cheat sheet | Daily reference |
+| **TECHNICAL_DOCUMENTATION.md** | In-depth theory | Learning concepts |
+| **PROJECT_SUMMARY.md** | Complete overview | Understanding scope |
 | **CODE_OVERVIEW.cpp** | Architecture guide | Understanding structure |
 | **VISUAL_DIAGRAMS.txt** | ASCII diagrams | Visual learners |
-| **INDEX.md** | This file! | Navigation |
 
 ### 🛠️ Build Scripts
+
+Located in root folder:
 
 | File | Purpose |
 |------|---------|
 | **build_and_run.ps1** | Automated build and run script for Windows |
+| **.gitignore** | Git ignore patterns |
+| **README.md** | Quick start guide |
 
 ### 📦 Compiled Binaries
 
+Located in root folder (gitignored):
+
 | File | Source | Example |
 |------|--------|---------|
-| **simple.exe** | simple_example.cpp | x² = 9 |
-| **zksnark.exe** | main.cpp | x³ + x + 5 = 35 |
+| **simple.exe** | examples/simple_example.cpp | x² = 9 |
+| **zksnark.exe** | examples/main.cpp | x³ + x + 5 = 35 |
 
 ---
 
@@ -253,8 +265,8 @@ static bool verify(vk, proof, public_inputs)          // Verify
 
 ### Compile All
 ```powershell
-g++ -std=c++17 simple_example.cpp -o simple.exe
-g++ -std=c++17 main.cpp -o zksnark.exe
+g++ -std=c++17 examples/simple_example.cpp -o simple.exe
+g++ -std=c++17 examples/main.cpp -o zksnark.exe
 ```
 
 ### Run Examples

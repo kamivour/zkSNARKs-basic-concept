@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
-#include "field.h"
-#include "elliptic_curve.h"
-#include "r1cs.h"
-#include "qap.h"
-#include "zksnark.h"
+#include "../src/field.h"
+#include "../src/elliptic_curve.h"
+#include "../src/r1cs.h"
+#include "../src/qap.h"
+#include "../src/zksnark.h"
 
 // Example: Prove knowledge of x such that x^3 + x + 5 = 35
 // This translates to: x^3 + x + 5 = 35

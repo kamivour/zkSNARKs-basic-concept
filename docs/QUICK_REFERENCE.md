@@ -4,12 +4,12 @@
 
 ### Compile Main Example
 ```powershell
-g++ -std=c++17 main.cpp -o zksnark.exe
+g++ -std=c++17 examples/main.cpp -o zksnark.exe
 ```
 
 ### Compile Simple Example
 ```powershell
-g++ -std=c++17 simple_example.cpp -o simple.exe
+g++ -std=c++17 examples/simple_example.cpp -o simple.exe
 ```
 
 ### Run Examples

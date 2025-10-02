@@ -1,11 +1,11 @@
 // Simple example: Prove you know x such that x^2 = 9, without revealing x = 3
 
 #include <iostream>
-#include "field.h"
-#include "elliptic_curve.h"
-#include "r1cs.h"
-#include "qap.h"
-#include "zksnark.h"
+#include "../src/field.h"
+#include "../src/elliptic_curve.h"
+#include "../src/r1cs.h"
+#include "../src/qap.h"
+#include "../src/zksnark.h"
 
 int main() {
     std::cout << "\n╔════════════════════════════════════════════════╗" << std::endl;
