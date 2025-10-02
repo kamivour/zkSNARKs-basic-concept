@@ -1,0 +1,92 @@
+# Compiled executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+build/
+out/
+
+# MinGW / GCC
+*.exe.stackdump
+
+# Backup files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Build directories
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# IDE specific
+*.cbp
+*.depend
+*.layout
+.idea/
+
+# Logs
+*.log
+
+# Core dumps
+core
+*.core
